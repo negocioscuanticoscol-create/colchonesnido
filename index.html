@@ -3,269 +3,538 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nido Colchones · Fábrica de colchones en Bogotá</title>
-<meta name="description" content="Fábrica de colchones en Bogotá: pillowtop, Sensaflex, BabyNido y colchones para cabina de camión. Fabricamos a la medida. Garantía de 5 años. Envíos a todo el país.">
+<title>Nido Colchones · Fábrica de colchones y lencería para el hogar en Bogotá</title>
+<meta name="description" content="Fábrica de colchones en Bogotá: pillowtop, colchonetas, BabyNido y colchones para tractomula. Además sábanas, edredones, plumones, colchas y protectores. Garantía de 5 años. Envíos a todo el país.">
 <link rel="canonical" href="https://colchonesnido.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Nido Colchones · Fábrica de colchones en Bogotá">
-<meta property="og:description" content="Pillowtop, Sensaflex, colchones para camión y fabricación a la medida. Garantía de 5 años. Envíos a todo el país.">
+<meta property="og:description" content="Colchones, colchonetas, BabyNido, colchones para tractomula y lencería para el hogar. Garantía de 5 años. Envíos a todo el país.">
 <meta property="og:url" content="https://colchonesnido.com/">
 <meta property="og:image" content="https://colchonesnido.com/catalogo/nido-catalogo-p1.jpg">
 <meta property="og:locale" content="es_CO">
+<meta name="theme-color" content="#0a84d6">
 <style>
   :root{
-    --navy:#144357; --navy2:#0e3243; --gold:#bca890; --gold2:#d9c8b6;
-    --crema:#f0e8db; --papel:#f4efe4; --card:#fffdf8; --ink:#14313f; --mut:#8b9aa3;
-    --line:#e4dccd;
-    --sh:0 1px 2px rgba(20,67,87,.06),0 14px 34px -20px rgba(20,67,87,.34);
+    --azul:#0b3a5b; --azul2:#0a84d6; --cielo:#19b9ee; --sol:#ffc400; --coral:#ff5a45;
+    --wa:#1fbf5f; --fondo:#f3f9fe; --card:#ffffff; --ink:#0f2a3d; --mut:#5c7386;
+    --line:#dbe8f2; --r:16px;
+    --sh:0 1px 2px rgba(11,58,91,.06),0 16px 34px -20px rgba(11,58,91,.38);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--papel);color:var(--ink);
-    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.5;
-    -webkit-font-smoothing:antialiased}
-  header{background:var(--navy);color:#fff;padding:22px 0;border-bottom:3px solid var(--gold)}
-  .hd{max-width:1000px;margin:0 auto;padding:0 18px;display:flex;align-items:center;
-    justify-content:space-between;gap:14px;flex-wrap:wrap}
-  .brand{display:flex;align-items:center;gap:11px}
-  .brand img{width:52px;height:42px;object-fit:contain}
-  .t1{font-family:Georgia,serif;font-size:22px;font-weight:700;letter-spacing:.08em;line-height:1}
-  .t2{font-size:9px;letter-spacing:.36em;color:var(--gold2);text-transform:uppercase;margin-top:3px}
-  .acc{display:flex;gap:8px;flex-wrap:wrap}
-  .btn{padding:9px 15px;border-radius:9px;background:var(--gold);color:var(--navy2);
-    font-weight:700;font-size:13px;text-decoration:none;border:none;cursor:pointer;
-    font-family:inherit;white-space:nowrap}
-  .btn.gh{background:transparent;border:1px solid rgba(217,200,182,.45);color:#e7dfd2}
+  html{scroll-behavior:smooth}
+  body{background:var(--fondo);color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  button{font-family:inherit}
+  .w{max-width:1120px;margin:0 auto;padding:0 16px}
 
-  /* La entrada: quién es Nido, en dos frases, antes de cualquier producto. */
-  .intro{background:var(--navy2);color:#e9e2d6;padding:34px 0 38px}
-  .in{max-width:1000px;margin:0 auto;padding:0 18px}
-  .intro h1{font-family:Georgia,serif;font-size:clamp(26px,4.4vw,40px);line-height:1.14;
-    font-weight:400;color:#fff;text-wrap:balance;max-width:17ch}
-  .intro p{margin-top:13px;max-width:56ch;color:#c8bfb2;font-size:15.5px}
-  .sellos{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
-  .sello{border:1px solid rgba(217,200,182,.34);border-radius:999px;padding:6px 13px;
-    font-size:12px;color:var(--gold2);letter-spacing:.02em}
+  /* Cabecera blanca: el logo respira y los botones se ven. */
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
+  .hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--azul)}
+  .brand img{width:50px;height:40px;object-fit:contain}
+  .t1{font-weight:900;font-size:21px;letter-spacing:.06em;line-height:1}
+  .t2{font-size:9.5px;letter-spacing:.32em;color:var(--azul2);text-transform:uppercase;margin-top:3px;font-weight:700}
+  .acc{display:flex;gap:8px;align-items:center}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:11px 17px;
+    border-radius:999px;background:var(--wa);color:#fff;font-weight:800;font-size:14px;
+    text-decoration:none;border:none;cursor:pointer;white-space:nowrap;
+    box-shadow:0 8px 18px -10px rgba(31,191,95,.9)}
+  .btn:hover{filter:brightness(1.06)}
+  .btn.sol{background:var(--sol);color:#3a2b00;box-shadow:0 8px 18px -10px rgba(255,196,0,.95)}
+  .btn.linea{background:#fff;color:var(--azul);border:1.5px solid var(--line);box-shadow:none}
+  .btn.ch{padding:8px 13px;font-size:12.5px}
 
-  main{max-width:1000px;margin:0 auto;padding:22px 18px 70px}
-  .pag{background:var(--card);border:1px solid var(--line);border-radius:12px;
-    overflow:hidden;box-shadow:var(--sh);margin-bottom:18px}
-  .pag img{width:100%;height:auto;display:block}
+  /* Entrada */
+  .hero{background:linear-gradient(120deg,#0a84d6 0%,#19b9ee 55%,#35d3c4 100%);color:#fff;
+    padding:34px 0 40px;position:relative;overflow:hidden}
+  .hero:after{content:"";position:absolute;right:-90px;top:-90px;width:320px;height:320px;
+    border-radius:50%;background:rgba(255,196,0,.9)}
+  .hero .w{position:relative;z-index:1}
+  .hero h1{font-size:clamp(28px,5.4vw,46px);line-height:1.08;font-weight:900;max-width:15ch;
+    text-wrap:balance;letter-spacing:-.01em}
+  .hero p{margin-top:12px;max-width:50ch;font-size:16.5px;color:#eefaff}
+  .sellos{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+  .sello{background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);border-radius:999px;
+    padding:6px 13px;font-size:12.5px;font-weight:700}
+  .hero .btn{margin-top:22px}
 
-  section{max-width:1000px;margin:0 auto;padding:0 18px 44px}
-  section h2{font-family:Georgia,serif;font-size:25px;font-weight:400;margin-bottom:4px}
-  section .sub{color:var(--mut);font-size:13.5px;margin-bottom:18px}
+  h2{font-size:clamp(22px,3.6vw,30px);font-weight:900;letter-spacing:-.01em;color:var(--azul)}
+  .sub{color:var(--mut);font-size:14.5px;margin-top:2px}
+  .bloque{padding:30px 0 6px}
 
-  /* Precios: una tabla por referencia. Cuatro medidas estándar, y la de camión aparte. */
-  .tw{background:var(--card);border:1px solid var(--line);border-radius:12px;
-    box-shadow:var(--sh);overflow-x:auto}
-  table{border-collapse:collapse;width:100%;min-width:520px;font-size:14px}
-  th,td{padding:12px 16px;text-align:right;border-bottom:1px solid var(--line);
-    font-variant-numeric:tabular-nums}
+  /* Botones de categoría: cada uno con su foto y su color. */
+  .cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:12px;margin-top:16px}
+  .cat{display:flex;flex-direction:column;border-radius:var(--r);overflow:hidden;
+    text-decoration:none;color:#fff;background:var(--c,#0a84d6);box-shadow:var(--sh);
+    transition:transform .15s ease}
+  .cat:hover{transform:translateY(-3px)}
+  .cat img{width:100%;aspect-ratio:4/3;height:auto;object-fit:cover;background:#fff}
+  .cat span{flex:1;padding:10px 12px 11px;font-weight:900;font-size:16px;line-height:1.15;
+    background:var(--c,#0a84d6)}
+  .cat small{display:block;font-weight:600;font-size:11.5px;opacity:.95;margin-top:2px}
+
+  /* Dentro de una categoría */
+  .chips{display:flex;gap:8px;overflow-x:auto;padding:12px 16px;scrollbar-width:none;
+    background:#fff;border-bottom:1px solid var(--line);position:sticky;top:61px;z-index:20}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:none;padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);background:#fff;
+    color:var(--azul);font-weight:700;font-size:13.5px;text-decoration:none}
+  .chip.on{background:var(--c,#0a84d6);border-color:var(--c,#0a84d6);color:#fff}
+  .cab{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:22px}
+  .cab .vol{color:var(--azul2);font-weight:700;font-size:13.5px;text-decoration:none}
+  .raya{height:6px;width:64px;border-radius:6px;background:var(--c,#0a84d6);margin:8px 0 0}
+
+  /* Las fotos enteras, sin recortar: columnas tipo mosaico. */
+  .fotos{columns:3 270px;column-gap:14px;margin-top:18px}
+  .foto{break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    overflow:hidden;box-shadow:var(--sh);margin-bottom:14px}
+  .foto button.im{display:block;width:100%;border:none;background:#fff;cursor:zoom-in;padding:0}
+  .foto img{width:100%;height:auto}
+  .foto .tx{padding:12px 14px 14px;border-top:1px solid var(--line)}
+  .foto b{display:block;font-size:15px;line-height:1.25}
+  .foto i{display:block;font-style:normal;color:var(--mut);font-size:13px;margin-top:2px}
+  .foto .btn{margin-top:10px;width:100%}
+  .vacio{background:#fff;border:1.5px dashed var(--line);border-radius:var(--r);padding:26px;
+    text-align:center;color:var(--mut);margin-top:18px}
+
+  /* Precios */
+  .tw{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+    box-shadow:var(--sh);overflow-x:auto;margin-top:14px}
+  table{border-collapse:collapse;width:100%;min-width:520px;font-size:14.5px}
+  th,td{padding:12px 16px;text-align:right;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
   th:first-child,td:first-child{text-align:left}
-  thead th{background:var(--crema);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;
-    color:#6d7f89;font-weight:700;white-space:nowrap}
+  thead th{background:var(--azul);color:#fff;font-size:11px;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
   tbody tr:last-child td{border-bottom:none}
-  td.ref b{display:block;font-weight:700}
-  td.ref i{font-style:normal;color:var(--mut);font-size:12px}
+  td.ref b{display:block}
+  td.ref i{font-style:normal;color:var(--mut);font-size:12.5px}
+  tbody td:not(.ref){font-weight:800;color:var(--azul2)}
 
-  .rej{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px}
-  .rz{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:17px 18px;
-    box-shadow:var(--sh)}
-  .rz b{display:block;font-family:Georgia,serif;font-size:17px;font-weight:400;margin-bottom:5px}
-  .rz span{color:var(--mut);font-size:13.5px}
+  /* Nido Truck: va en texto porque Google lee texto, no JPG. */
+  .truck{background:var(--azul);color:#e7f3fb;border-radius:var(--r);padding:24px 20px;margin-top:16px;box-shadow:var(--sh)}
+  .truck h3{color:#fff;font-size:19px;font-weight:900;margin-bottom:4px}
+  .tk2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-bottom:20px}
+  .tkc{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:15px 16px}
+  .tkc b{display:block;font-size:16px;color:var(--sol);margin-bottom:5px}
+  .tkc span{font-size:14px;color:#cfe4f1;line-height:1.55}
+  .capas{list-style:none;display:grid;gap:5px;margin:12px 0 0}
+  .capas li{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.07);
+    border-left:5px solid var(--cielo);border-radius:0 9px 9px 0;padding:10px 14px;font-size:14px}
+  .capas li.nuc{border-left-color:var(--sol);background:rgba(255,196,0,.16)}
+  .capas em{font-style:normal;color:#a9c7da;font-size:12.5px;margin-left:auto;text-align:right}
+  .tk4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:20px}
+  .tk4 div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:13px 14px}
+  .tk4 b{display:block;font-size:14.5px;color:#fff}
+  .tk4 span{font-size:12.5px;color:#a9c7da}
+  .tkcta{margin-top:20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .tkcta span{font-size:13.5px;color:#a9c7da}
 
-  /* NIDO TRUCK. Es la linea que mas se esta empujando, asi que deja de ser una
-     imagen del catalogo y pasa a ser seccion propia, en texto: Google lee texto,
-     no lee JPG, y el conductor que busca "colchon para cabina" tiene que caer aca. */
-  .truck{background:var(--navy2);color:#e9e2d6;border-radius:14px;padding:26px 24px 24px;
-    box-shadow:var(--sh)}
-  .truck h3{font-family:Georgia,serif;font-weight:400;color:#fff;font-size:20px;
-    margin-bottom:6px}
-  .tk2{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;
-    margin-bottom:22px}
-  .tkc{background:rgba(255,255,255,.055);border:1px solid rgba(217,200,182,.22);
-    border-radius:11px;padding:16px 17px}
-  .tkc b{display:block;font-family:Georgia,serif;font-weight:400;font-size:16.5px;
-    color:var(--gold2);margin-bottom:6px}
-  .tkc span{font-size:14px;color:#c8bfb2;line-height:1.55}
-  /* Las cinco capas, dibujadas con el mismo orden en que salen de la mesa de corte. */
-  .capas{list-style:none;display:grid;gap:5px;margin:14px 0 0}
-  .capas li{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.05);
-    border-left:4px solid var(--gold);border-radius:0 8px 8px 0;padding:10px 14px;
-    font-size:14px}
-  .capas li.nuc{border-left-color:#e0a03c;background:rgba(224,160,60,.13)}
-  .capas em{font-style:normal;color:var(--mut);font-size:12.5px;margin-left:auto;
-    text-align:right}
-  .tk4{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;
-    margin-top:22px}
-  .tk4 div{background:rgba(255,255,255,.055);border:1px solid rgba(217,200,182,.22);
-    border-radius:11px;padding:14px 15px}
-  .tk4 b{display:block;font-size:14.5px;color:#fff;margin-bottom:3px}
-  .tk4 span{font-size:12.5px;color:#a9a195;line-height:1.5}
-  .tkcta{margin-top:22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-  .tkcta span{font-size:13.5px;color:#a9a195}
+  .cont{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:14px}
+  .cx{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 17px;box-shadow:var(--sh);
+    border-top:5px solid var(--c,#0a84d6)}
+  .cx h3{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--mut);margin-bottom:7px}
+  .cx p{font-size:15px;line-height:1.55}
+  .cx a{color:var(--azul2);font-weight:700}
 
-  .cont{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:14px}
-  .cx{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:17px 18px;
-    box-shadow:var(--sh)}
-  .cx h3{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:#6d7f89;
-    margin-bottom:8px}
-  .cx p{font-size:14.5px;line-height:1.55}
-  .cx a{color:var(--navy);font-weight:600}
-
-  .cta{background:var(--navy);color:#fff;border-radius:14px;padding:26px 24px;
-    display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  .cta div{font-family:Georgia,serif;font-size:20px;max-width:26ch}
-
-  .pie{max-width:1000px;margin:0 auto;padding:0 18px 46px;font-size:12.5px;color:var(--mut)}
+  .cta{background:linear-gradient(120deg,#ff5a45,#ff9f1c);color:#fff;border-radius:var(--r);padding:24px 20px;
+    display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin:30px 0 0}
+  .cta div{font-size:21px;font-weight:900;max-width:24ch;line-height:1.2}
+  .pie{padding:22px 0 90px;font-size:12.5px;color:var(--mut)}
   .pie b{color:var(--ink)}
-  @media print{
-    header .acc,.intro .sellos,.cta,.pie{display:none}
-    body{background:#fff}
-    main{max-width:none;padding:0}
-    .pag{border:none;border-radius:0;box-shadow:none;margin:0;page-break-after:always}
+  .flota{position:fixed;right:14px;bottom:14px;z-index:40;width:58px;height:58px;border-radius:50%;
+    background:var(--wa);display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(31,191,95,.9)}
+  .flota svg{width:32px;height:32px;fill:#fff}
+
+  /* Ventanas: foto grande y entrada de Empresa */
+  dialog{border:none;border-radius:var(--r);padding:0;max-width:min(96vw,1000px);background:#fff;color:var(--ink)}
+  dialog::backdrop{background:rgba(6,28,44,.78)}
+  .lb img{max-height:78vh;width:auto;max-width:100%;margin:0 auto}
+  .lb .ba{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;flex-wrap:wrap}
+  .lb .ba b{font-size:15px}
+  .x{border:none;background:#eef4f9;color:var(--azul);border-radius:999px;padding:9px 14px;font-weight:800;cursor:pointer}
+  .ent{padding:22px 20px;width:min(92vw,360px)}
+  .ent h3{font-size:19px;font-weight:900;color:var(--azul)}
+  .ent label{display:block;font-size:12px;font-weight:700;color:var(--mut);margin:12px 0 4px;text-transform:uppercase;letter-spacing:.05em}
+  .ent input{width:100%;padding:12px 13px;border:1.5px solid var(--line);border-radius:11px;font-size:16px;font-family:inherit}
+  .ent .err{color:#c62828;font-size:13.5px;margin-top:10px;min-height:18px}
+  .ent .fila{display:flex;gap:8px;margin-top:8px}
+  .ent .fila .btn{flex:1}
+
+  /* Empresa: prender y apagar fotos */
+  .adm{background:#fff7dc;border:1.5px solid var(--sol);border-radius:var(--r);padding:14px 16px;margin-top:20px;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
+  .adm b{font-size:16px}
+  .ag{margin-top:22px}
+  .ag h3{font-size:18px;font-weight:900;color:var(--azul);display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .ag h3 small{font-size:13px;font-weight:600;color:var(--mut)}
+  .al{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px;margin-top:10px}
+  .ai{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:9px 12px 9px 9px}
+  .ai img{width:74px;height:60px;object-fit:cover;border-radius:9px;flex:none;background:#eef4f9}
+  .ai .n{flex:1;min-width:0;font-size:14px;line-height:1.25;font-weight:700}
+  .ai .n i{display:block;font-style:normal;font-weight:500;font-size:12.5px;color:var(--mut)}
+  .ai.off{background:#f4f4f4}
+  .ai.off img{filter:grayscale(1);opacity:.5}
+  .ai.off .n{color:#8a8a8a;text-decoration:line-through}
+  .sw{flex:none;position:relative;width:56px;height:32px;border-radius:999px;border:none;cursor:pointer;background:#c5ccd2;transition:background .15s}
+  .sw:after{content:"";position:absolute;top:3px;left:3px;width:26px;height:26px;border-radius:50%;background:#fff;transition:left .15s;box-shadow:0 1px 3px rgba(0,0,0,.3)}
+  .sw.on{background:var(--wa)}
+  .sw.on:after{left:27px}
+  .sw:disabled{opacity:.5}
+  .aviso{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--azul);color:#fff;
+    padding:11px 18px;border-radius:999px;font-size:14px;font-weight:700;z-index:60;box-shadow:var(--sh);max-width:92vw;text-align:center}
+  [hidden]{display:none!important}
+  @media (max-width:560px){
+    .acc .btn span.l{display:none}
+    .chips{top:61px}
+    .fotos{columns:1}
+    .cats{grid-template-columns:repeat(2,1fr)}
   }
 </style>
 </head>
 <body>
 
-<header><div class="hd">
-  <div class="brand">
+<header><div class="w hd">
+  <a class="brand" href="#/">
     <img src="assets/nido-logo.png" alt="Nido Colchones">
     <div><div class="t1">NIDO</div><div class="t2">Colchones</div></div>
-  </div>
+  </a>
   <div class="acc">
-    <a class="btn" href="https://wa.me/573229190943?text=Hola,%20vi%20la%20p%C3%A1gina%20de%20Nido%20Colchones"
-       target="_blank" rel="noopener">Escribir por WhatsApp</a>
-    <button class="btn gh" onclick="window.print()">Imprimir / PDF</button>
+    <button class="btn linea ch" id="bEmpresa" type="button">Empresa</button>
+    <a class="btn ch" href="https://wa.me/573229190943?text=Hola,%20vi%20la%20p%C3%A1gina%20de%20Nido%20Colchones"
+       target="_blank" rel="noopener">WhatsApp<span class="l">&nbsp;322 919 0943</span></a>
   </div>
 </div></header>
 
-<div class="intro"><div class="in">
-  <h1>Fábrica de colchones en Bogotá</h1>
-  <p>Fabricamos pillowtop, espuma Sensaflex y colchones para cabina de camión.
-     Si la medida que necesita no existe, la hacemos.</p>
-  <div class="sellos">
-    <span class="sello">Garantía de 5 años</span>
-    <span class="sello">Fabricación a la medida</span>
-    <span class="sello">Venta directa de fábrica</span>
-    <span class="sello">Envíos a todo el país</span>
-  </div>
-</div></div>
+<nav class="chips" id="chips" hidden></nav>
 
-<main>
-  <div class="pag"><img src="catalogo/nido-catalogo-p1.jpg" alt="Colchones: Pillowtop Cassata y Pillowtop Resortado" loading="eager"></div>
-  <div class="pag"><img src="catalogo/nido-catalogo-p2.jpg" alt="Crea tu colchón, el servicio a la medida" loading="lazy"></div>
-  <div class="pag"><img src="catalogo/nido-catalogo-p3.jpg" alt="Sensaflex D26 y BabyNido" loading="lazy"></div>
-  <div class="pag"><img src="catalogo/nido-catalogo-p6.jpg" alt="Nido Truck: formas y cotas de los cuatro moldes" loading="lazy"></div>
-</main>
-
-<section>
-  <h2>Colchones para tu tractomula</h2>
-  <div class="sub">Nido Truck · a la medida de tu cabina. Desde $295.000.</div>
-
-  <div class="truck">
-    <div class="tk2">
-      <div class="tkc"><b>El de fábrica es delgado y se vence rápido</b>
-        <span>Lo sabemos. Por eso Nido Truck es más grueso, más firme y con núcleo
-        compacto de alta densidad que no se hunde.</span></div>
-      <div class="tkc"><b>Descansar bien en carretera es seguridad</b>
-        <span>Un buen sueño en la cabina se nota al volante: más atención y menos
-        fatiga. Renueva tu colchón por uno que sí dura.</span></div>
+<!-- INICIO -->
+<div id="vInicio">
+  <div class="hero"><div class="w">
+    <h1>Fábrica de colchones en Bogotá</h1>
+    <p>Colchones, colchonetas, BabyNido y colchones para tractomula, hechos por nosotros.
+       Y toda la lencería para vestir la cama. Si la medida que necesita no existe, la hacemos.</p>
+    <div class="sellos">
+      <span class="sello">Garantía de 5 años</span>
+      <span class="sello">A la medida</span>
+      <span class="sello">Directo de fábrica</span>
+      <span class="sello">Envíos a todo el país</span>
     </div>
+    <a class="btn sol" href="#categorias">Ver el catálogo</a>
+  </div></div>
 
-    <h3>Así está hecho por dentro</h3>
-    <div class="sub" style="color:#a9a195;margin-bottom:0">Cinco capas simétricas,
-      todo forrado en tela de alta calidad.</div>
-    <ul class="capas">
-      <li>Tela jacquard acolchada <em>cara superior</em></li>
-      <li>Espuma D-26</li>
-      <li class="nuc"><b>Núcleo compacto de alta densidad</b> <em>es el que no se hunde</em></li>
-      <li>Espuma D-26</li>
-      <li>Tela jacquard acolchada <em>cara inferior</em></li>
-    </ul>
-
-    <div class="tk4">
-      <div><b>A la medida</b><span>Todas las marcas y modelos de cabina</span></div>
-      <div><b>Más confort</b><span>Más grueso y firme que el de fábrica</span></div>
-      <div><b>Dura años</b><span>Alta densidad, no se hunde</span></div>
-      <div><b>Directo de fábrica</b><span>El Bosque, Bogotá · sin intermediarios</span></div>
-    </div>
-
-    <div class="tkcta">
-      <a class="btn" href="https://wa.me/573229190943?text=Hola,%20quiero%20un%20colch%C3%B3n%20para%20la%20cabina%20de%20mi%20cami%C3%B3n"
-         target="_blank" rel="noopener">Pide tu colchón a la medida</a>
-      <span>Dinos la marca y el modelo de tu camión.</span>
-    </div>
+  <div class="w bloque" id="categorias">
+    <h2>¿Qué está buscando?</h2>
+    <div class="sub">Toque una categoría para ver las fotos.</div>
+    <div class="cats" id="cats"></div>
   </div>
-</section>
-
-<section>
-  <h2>Precios por medida</h2>
-  <div class="sub">Valores por unidad, en pesos colombianos.</div>
-  <div class="tw"><table>
-    <thead><tr>
-      <th>Referencia</th>
-      <th>Sencilla<br>100&times;190</th>
-      <th>Semidoble<br>120&times;190</th>
-      <th>Doble<br>140&times;190</th>
-      <th>Queen<br>160&times;190</th>
-    </tr></thead>
-    <tbody>
-      <tr>
-        <td class="ref"><b>Pillowtop Resortado</b><i>Resortes con acolchado pillow top</i></td>
-        <td>$850.000</td><td>$950.000</td><td>$990.000</td><td>$1.150.000</td>
-      </tr>
-      <tr>
-        <td class="ref"><b>Pillowtop Cassata</b><i>Acolchado pillow top</i></td>
-        <td>$750.000</td><td>$850.000</td><td>$950.000</td><td>$1.050.000</td>
-      </tr>
-      <tr>
-        <td class="ref"><b>Sensaflex Gris D26</b><i>Espuma de alta densidad · 15 cm</i></td>
-        <td>$380.000</td><td>$400.000</td><td>$420.000</td><td>$500.000</td>
-      </tr>
-    </tbody>
-  </table></div>
-</section>
-
-<section>
-  <h2>Lo que se hace por pedido</h2>
-  <div class="sub">Estas líneas se cotizan según la medida y el material.</div>
-  <div class="rej">
-    <div class="rz"><b>Nido Truck</b><span>Colchones para cabina de camión.
-      Cuatro moldes según el modelo. Desde $295.000.</span></div>
-    <div class="rz"><b>A la medida</b><span>Cualquier ancho, largo o alto.
-      Camas especiales, sofá cama, literas.</span></div>
-    <div class="rz"><b>BabyNido</b><span>Colchones para cuna y corral.</span></div>
-  </div>
-</section>
-
-<section>
-  <h2>Dónde estamos</h2>
-  <div class="sub">Fábrica y punto de venta. Se atiende sin cita.</div>
-  <div class="cont">
-    <div class="cx"><h3>Dirección</h3><p>Calle 57C Sur # 89A&#8209;40<br>Barrio El Bosque<br>Bogotá D.C., Colombia</p></div>
-    <div class="cx"><h3>Horario</h3><p>Lunes a viernes<br>8:00 a.m. – 5:30 p.m.<br>Sábados 8:00 a.m. – 1:00 p.m.</p></div>
-    <div class="cx"><h3>Contacto</h3><p>
-      <a href="https://wa.me/573229190943" target="_blank" rel="noopener">WhatsApp 322 919 0943</a><br>
-      <a href="tel:+573229190943">Llamar al 322 919 0943</a><br>
-      <a href="mailto:fabricadecolchonesnido@gmail.com">fabricadecolchonesnido@gmail.com</a></p></div>
-  </div>
-</section>
-
-<section>
-  <div class="cta">
-    <div>Dígame la medida y le paso el precio.</div>
-    <a class="btn" href="https://wa.me/573229190943?text=Hola,%20quiero%20cotizar%20un%20colch%C3%B3n"
-       target="_blank" rel="noopener">Escribir por WhatsApp</a>
-  </div>
-</section>
-
-<div class="pie">
-  Medidas aproximadas y sujetas a tolerancia de fabricación. Precios sujetos a cambios sin previo aviso.
-  FVR, Fotón y Kenworth se citan como referencia de cabina: <b>Nido no está afiliada a esas marcas</b>
-  ni cuenta con su respaldo.
 </div>
 
+<!-- UNA CATEGORÍA -->
+<div id="vCat" hidden>
+  <div class="w">
+    <div class="cab">
+      <div><h2 id="cTit"></h2><div class="sub" id="cSub"></div><div class="raya" id="cRaya"></div></div>
+      <a class="vol" href="#/">← Todas las categorías</a>
+    </div>
+    <div class="fotos" id="fotos"></div>
+    <div class="vacio" id="vacio" hidden>En este momento no hay fotos disponibles en esta categoría.
+      Escríbanos por WhatsApp y le contamos qué hay.</div>
+  </div>
+
+  <div class="w" id="xColchones" hidden>
+    <div class="bloque">
+      <h2>Precios por medida</h2>
+      <div class="sub">Valores por unidad, en pesos colombianos.</div>
+      <div class="tw"><table>
+        <thead><tr>
+          <th>Referencia</th>
+          <th>Sencilla<br>100&times;190</th>
+          <th>Semidoble<br>120&times;190</th>
+          <th>Doble<br>140&times;190</th>
+          <th>Queen<br>160&times;190</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="ref"><b>Pillowtop Resortado</b><i>Resortes con acolchado pillow top</i></td>
+            <td>$850.000</td><td>$950.000</td><td>$990.000</td><td>$1.150.000</td></tr>
+          <tr><td class="ref"><b>Pillowtop Cassata</b><i>Acolchado pillow top</i></td>
+            <td>$750.000</td><td>$850.000</td><td>$950.000</td><td>$1.050.000</td></tr>
+          <tr><td class="ref"><b>Sensaflex Gris D26</b><i>Espuma de alta densidad · 15 cm</i></td>
+            <td>$380.000</td><td>$400.000</td><td>$420.000</td><td>$500.000</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <div class="w" id="xTractomulas" hidden>
+    <div class="truck">
+      <div class="tk2">
+        <div class="tkc"><b>El de fábrica es delgado y se vence rápido</b>
+          <span>Lo sabemos. Por eso Nido Truck es más grueso, más firme y con núcleo
+          compacto de alta densidad que no se hunde.</span></div>
+        <div class="tkc"><b>Descansar bien en carretera es seguridad</b>
+          <span>Un buen sueño en la cabina se nota al volante: más atención y menos
+          fatiga. Renueva tu colchón por uno que sí dura.</span></div>
+      </div>
+      <h3>Así está hecho por dentro</h3>
+      <div style="color:#a9c7da;font-size:13.5px">Cinco capas simétricas, todo forrado en tela de alta calidad.</div>
+      <ul class="capas">
+        <li>Tela jacquard acolchada <em>cara superior</em></li>
+        <li>Espuma D-26</li>
+        <li class="nuc"><b>Núcleo compacto de alta densidad</b> <em>es el que no se hunde</em></li>
+        <li>Espuma D-26</li>
+        <li>Tela jacquard acolchada <em>cara inferior</em></li>
+      </ul>
+      <div class="tk4">
+        <div><b>A la medida</b><span>Todas las marcas y modelos de cabina</span></div>
+        <div><b>Más confort</b><span>Más grueso y firme que el de fábrica</span></div>
+        <div><b>Dura años</b><span>Alta densidad, no se hunde</span></div>
+        <div><b>Desde $295.000</b><span>Directo de fábrica, sin intermediarios</span></div>
+      </div>
+      <div class="tkcta">
+        <a class="btn sol" href="https://wa.me/573229190943?text=Hola,%20quiero%20un%20colch%C3%B3n%20para%20la%20cabina%20de%20mi%20cami%C3%B3n"
+           target="_blank" rel="noopener">Pide tu colchón a la medida</a>
+        <span>Dinos la marca y el modelo de tu camión.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EMPRESA -->
+<div id="vEmp" hidden>
+  <div class="w">
+    <div class="adm">
+      <div><b>Empresa · qué fotos se ven</b><br>
+        Apague lo que no haya en inventario: deja de salir en las categorías al instante.
+        Para volver a mostrarlo, préndalo. <span id="aCuenta"></span></div>
+      <button class="x" id="bSalir" type="button">Salir</button>
+    </div>
+    <div id="aLista"></div>
+  </div>
+</div>
+
+<!-- SIEMPRE -->
+<div class="w">
+  <div class="cta">
+    <div>Dígame qué necesita y le paso el precio.</div>
+    <a class="btn" style="background:#fff;color:#c93a22;box-shadow:none"
+       href="https://wa.me/573229190943?text=Hola,%20quiero%20cotizar" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+  </div>
+
+  <div class="bloque">
+    <h2>Dónde estamos</h2>
+    <div class="sub">Fábrica y punto de venta. Se atiende sin cita.</div>
+    <div class="cont">
+      <div class="cx" style="--c:#0a84d6"><h3>Dirección</h3><p>Calle 57C Sur # 89A&#8209;40<br>Barrio El Bosque<br>Bogotá D.C., Colombia</p></div>
+      <div class="cx" style="--c:#ffc400"><h3>Horario</h3><p>Lunes a viernes<br>8:00 a.m. – 5:30 p.m.<br>Sábados 8:00 a.m. – 1:00 p.m.</p></div>
+      <div class="cx" style="--c:#1fbf5f"><h3>Contacto</h3><p>
+        <a href="https://wa.me/573229190943" target="_blank" rel="noopener">WhatsApp 322 919 0943</a><br>
+        <a href="tel:+573229190943">Llamar al 322 919 0943</a><br>
+        <a href="mailto:fabricadecolchonesnido@gmail.com">fabricadecolchonesnido@gmail.com</a></p></div>
+    </div>
+  </div>
+
+  <div class="pie">
+    Medidas aproximadas y sujetas a tolerancia de fabricación. Precios y disponibilidad sujetos a cambios sin previo aviso.
+    FVR, Fotón y Kenworth se citan como referencia de cabina: <b>Nido no está afiliada a esas marcas</b>
+    ni cuenta con su respaldo.
+  </div>
+</div>
+
+<a class="flota" href="https://wa.me/573229190943?text=Hola,%20vi%20la%20p%C3%A1gina%20de%20Nido%20Colchones"
+   target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.800 2 6.800L3 29l6.700-2c1.900 1 4 1.600 6.300 1.600 7.200 0 13-5.700 13-12.800S23.200 3 16 3zm0 23.300c-2 0-3.900-.6-5.500-1.600l-.4-.2-4 1.200 1.200-3.800-.3-.4c-1.200-1.700-1.800-3.700-1.800-5.700C5.200 10 10 5.200 16 5.200S26.800 10 26.800 15.800 22 26.300 16 26.300zm5.900-7.800c-.3-.2-1.900-.9-2.200-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.200-.2.2-.4.2-.7.1-.3-.2-1.400-.5-2.600-1.600-1-.9-1.600-1.900-1.800-2.200-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.700-1-2.300-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.200 1.100-1.200 2.800 0 1.600 1.200 3.200 1.400 3.400.2.2 2.400 3.600 5.800 5 .8.3 1.400.5 1.900.7.8.3 1.500.2 2.100.1.600-.1 1.900-.8 2.200-1.500.3-.7.3-1.400.2-1.500-.1-.2-.3-.300-.600-.4z"/></svg>
+</a>
+
+<dialog class="lb" id="lb">
+  <img id="lbImg" alt="">
+  <div class="ba">
+    <b id="lbTit"></b>
+    <div style="display:flex;gap:8px">
+      <a class="btn ch" id="lbWa" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+      <button class="x" type="button" onclick="document.getElementById('lb').close()">Cerrar</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="dEnt">
+  <form class="ent" id="fEnt">
+    <h3>Empresa</h3>
+    <div class="sub">Solo para el personal de Nido.</div>
+    <label for="eU">Usuario</label>
+    <input id="eU" autocomplete="username" autocapitalize="none" required>
+    <label for="eC">Clave</label>
+    <input id="eC" type="password" autocomplete="current-password" required>
+    <div class="err" id="eErr"></div>
+    <div class="fila">
+      <button class="btn linea" type="button" onclick="document.getElementById('dEnt').close()">Cancelar</button>
+      <button class="btn" type="submit" style="background:var(--azul2);box-shadow:none">Entrar</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="aviso" id="aviso" hidden></div>
+
+<noscript><div class="w" style="padding:20px 16px">Para ver las fotos del catálogo active JavaScript,
+  o escríbanos por WhatsApp al 322 919 0943.</div></noscript>
+
+<script src="productos.js?v=2"></script>
+<script>
+/* ---------- Catálogo de colchonesnido.com ----------
+   Las fotos viven en este repo (carpeta fotos/) y la lista en productos.js.
+   Lo único que va a la base es QUÉ foto está apagada: tabla nido_web_apagados.
+   Leerla es libre; escribirla solo se puede por la función nido_web_visible,
+   que pide usuario y clave. Si la base no responde, la página muestra todo. */
+const SB='https://fnayedgvamxktxfvywwl.supabase.co';
+const KEY='sb_publishable_NVTYNkJ0V6obLwgwjXza1g_3Ihp-xMv';
+const WA='573229190943';
+const CATS=[
+  {id:'pillowtop',   n:'Colchones Pillowtop', s:'Con acolchado pillow top. Hechos en nuestra fábrica.',        c:'#4b5563'},
+  {id:'resortados',  n:'Colchones Resortados',s:'Con resortes. Hechos en nuestra fábrica.',                    c:'#4b5563'},
+  {id:'colchonetas', n:'Colchonetas',          s:'En la medida y la tela que necesite.',                        c:'#4b5563'},
+  {id:'baby',        n:'Baby colchón',         s:'BabyNido: colchones para cuna y corral.',                     c:'#4b5563'},
+  {id:'tractomulas', n:'Colchones tractomulas',s:'Nido Truck · a la medida de tu cabina. Desde $295.000.',      c:'#4b5563'},
+  {id:'sabanas',     n:'Sábanas',              s:'Juegos de sábanas en todas las medidas.',                     c:'#4b5563'},
+  {id:'edredones',   n:'Edredones',            s:'Para vestir la cama y abrigar.',                              c:'#4b5563'},
+  {id:'plumones',    n:'Plumones',             s:'Livianos y abrigados.',                                       c:'#4b5563'},
+  {id:'duvets',      n:'Duvets',               s:'Fundas para plumón.',                                         c:'#4b5563'},
+  {id:'colchas',     n:'Colchas',              s:'Termoselladas y reversibles.',                                c:'#4b5563'},
+  {id:'cobijas',     n:'Cobijas y mantas',     s:'Para el frío.',                                               c:'#4b5563'},
+  {id:'protectores', n:'Protectores',          s:'De colchón y de sofá.',                                       c:'#4b5563'},
+  {id:'almohadas',   n:'Almohadas',            s:'',                                                            c:'#4b5563'},
+  {id:'toallas',     n:'Toallas',              s:'',                                                            c:'#4b5563'}
+];
+const PROD=window.NIDO_PRODUCTOS||[];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+let apagados=new Set();
+let sesion=null;                       /* {u,c} mientras Diana está adentro */
+try{ apagados=new Set(JSON.parse(sessionStorage.getItem('nido_apag')||'[]')); }catch(e){}
+try{ sesion=JSON.parse(sessionStorage.getItem('nido_emp')||'null'); }catch(e){}
+
+function waLink(p){
+  const t='Hola, vi en la página de Nido: '+p.n+(p.d?' ('+p.d+')':'')+'. ¿Lo tienen disponible?';
+  return 'https://wa.me/'+WA+'?text='+encodeURIComponent(t);
+}
+function visibles(cat){ return PROD.filter(p=>p.cat===cat&&!apagados.has(p.id)); }
+
+async function sb(ruta,cuerpo){
+  const r=await fetch(SB+ruta,{method:cuerpo?'POST':'GET',
+    headers:{apikey:KEY,Authorization:'Bearer '+KEY,'Content-Type':'application/json'},
+    body:cuerpo?JSON.stringify(cuerpo):undefined});
+  if(!r.ok){ let m=''; try{ m=(await r.json()).message||''; }catch(e){} throw new Error(m||('Error '+r.status)); }
+  return r.json();
+}
+async function cargarApagados(){
+  try{
+    const f=await sb('/rest/v1/nido_web_apagados?select=id');
+    apagados=new Set(f.map(x=>x.id));
+    try{ sessionStorage.setItem('nido_apag',JSON.stringify([...apagados])); }catch(e){}
+    return true;
+  }catch(e){ return false; }
+}
+
+/* ---------- Vistas ---------- */
+function pintarInicio(){
+  $('cats').innerHTML=CATS.map(c=>{
+    const v=visibles(c.id); if(!v.length) return '';
+    return `<a class="cat" style="--c:${c.c}" href="#/${c.id}">
+      <img src="${v[0].f}" alt="${esc(c.n)}" loading="lazy" width="${v[0].w}" height="${v[0].h}">
+      <span>${esc(c.n)}<small>${v.length} ${v.length===1?'foto':'fotos'}</small></span></a>`;
+  }).join('');
+}
+function pintarChips(actual){
+  const con=CATS.filter(c=>visibles(c.id).length||c.id===actual);
+  $('chips').innerHTML=con.map(c=>
+    `<a class="chip${c.id===actual?' on':''}" style="--c:${c.c}" href="#/${c.id}">${esc(c.n)}</a>`).join('');
+  const on=$('chips').querySelector('.on'); if(on) on.scrollIntoView({block:'nearest',inline:'center'});
+}
+function pintarCat(id){
+  const c=CATS.find(x=>x.id===id); if(!c){ location.hash='#/'; return; }
+  const v=visibles(id);
+  $('cTit').textContent=c.n; $('cSub').textContent=c.s; $('cRaya').style.setProperty('--c',c.c);
+  $('fotos').innerHTML=v.map(p=>`<div class="foto">
+      <button class="im" type="button" data-id="${p.id}" aria-label="Ver grande: ${esc(p.n)}">
+        <img src="${p.f}" alt="${esc(p.n)}" loading="lazy" width="${p.w}" height="${p.h}"></button>
+      <div class="tx"><b>${esc(p.n)}</b>${p.d?`<i>${esc(p.d)}</i>`:''}
+        <a class="btn ch" href="${waLink(p)}" target="_blank" rel="noopener">Preguntar por WhatsApp</a></div>
+    </div>`).join('');
+  $('vacio').hidden=v.length>0;
+  $('xColchones').hidden=id!=='pillowtop'&&id!=='resortados';
+  $('xTractomulas').hidden=id!=='tractomulas';
+  document.title=c.n+' · Nido Colchones';
+}
+function pintarEmpresa(){
+  const tot=PROD.length, off=PROD.filter(p=>apagados.has(p.id)).length;
+  $('aCuenta').innerHTML=`<b>${tot-off} prendidas</b> y ${off} apagadas de ${tot}.`;
+  $('aLista').innerHTML=CATS.map(c=>{
+    const ps=PROD.filter(p=>p.cat===c.id); if(!ps.length) return '';
+    const on=ps.filter(p=>!apagados.has(p.id)).length;
+    return `<div class="ag"><h3>${esc(c.n)} <small>${on} de ${ps.length} a la vista</small></h3><div class="al">`+
+      ps.map(p=>{ const a=apagados.has(p.id);
+        return `<div class="ai${a?' off':''}"><img src="${p.f}" alt="" loading="lazy">
+          <div class="n">${esc(p.n)}${p.d?`<i>${esc(p.d)}</i>`:''}</div>
+          <button class="sw${a?'':' on'}" type="button" data-sw="${p.id}" role="switch" aria-checked="${!a}"
+            aria-label="${a?'Prender':'Apagar'} ${esc(p.n)}"></button></div>`; }).join('')+'</div></div>';
+  }).join('');
+}
+function ruta(){
+  const h=(location.hash||'#/').replace(/^#\/?/,'');
+  const emp=h==='empresa';
+  if(emp&&!sesion){ location.hash='#/'; abrirEntrada(); return; }
+  const cat=!emp&&CATS.some(c=>c.id===h)?h:'';
+  $('vInicio').hidden=!!cat||emp; $('vCat').hidden=!cat; $('vEmp').hidden=!emp;
+  $('chips').hidden=!cat;
+  $('bEmpresa').textContent=sesion?'Empresa ✓':'Empresa';
+  if(emp){ pintarEmpresa(); document.title='Empresa · Nido Colchones'; }
+  else if(cat){ pintarChips(cat); pintarCat(cat); }
+  else{ pintarInicio(); document.title='Nido Colchones · Fábrica de colchones y lencería para el hogar en Bogotá'; }
+  if(cat||emp) window.scrollTo(0,0);
+}
+
+/* ---------- Foto grande ---------- */
+document.addEventListener('click',e=>{
+  const b=e.target.closest('button.im');
+  if(b){ const p=PROD.find(x=>x.id===b.dataset.id); if(!p) return;
+    $('lbImg').src=p.f; $('lbImg').alt=p.n; $('lbTit').textContent=p.n+(p.d?' · '+p.d:''); $('lbWa').href=waLink(p);
+    $('lb').showModal(); return; }
+  const s=e.target.closest('[data-sw]'); if(s) alternar(s);
+});
+$('lb').addEventListener('click',e=>{ if(e.target===$('lb')) $('lb').close(); });
+
+/* ---------- Empresa ---------- */
+let tAviso=0;
+function aviso(t){ $('aviso').textContent=t; $('aviso').hidden=false; clearTimeout(tAviso); tAviso=setTimeout(()=>$('aviso').hidden=true,3200); }
+function abrirEntrada(){ $('eErr').textContent=''; $('dEnt').showModal(); $('eU').focus(); }
+$('bEmpresa').addEventListener('click',()=>{ if(sesion) location.hash='#/empresa'; else abrirEntrada(); });
+$('fEnt').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const u=$('eU').value.trim(), c=$('eC').value.trim();
+  $('eErr').textContent='Revisando…';
+  try{
+    const ok=await sb('/rest/v1/rpc/nido_web_entra',{p_usuario:u,p_clave:c});
+    if(ok!==true){ $('eErr').textContent='Usuario o clave incorrectos.'; return; }
+    sesion={u,c}; try{ sessionStorage.setItem('nido_emp',JSON.stringify(sesion)); }catch(x){}
+    $('eC').value=''; $('dEnt').close(); await cargarApagados(); location.hash='#/empresa'; ruta();
+  }catch(x){ $('eErr').textContent='No se pudo conectar. Intente de nuevo.'; }
+});
+$('bSalir').addEventListener('click',()=>{ sesion=null; try{ sessionStorage.removeItem('nido_emp'); }catch(x){} location.hash='#/'; });
+async function alternar(btn){
+  const id=btn.dataset.sw, prender=apagados.has(id);
+  btn.disabled=true;
+  try{
+    await sb('/rest/v1/rpc/nido_web_visible',{p_usuario:sesion.u,p_clave:sesion.c,p_id:id,p_visible:prender});
+    if(prender) apagados.delete(id); else apagados.add(id);
+    try{ sessionStorage.setItem('nido_apag',JSON.stringify([...apagados])); }catch(x){}
+    const p=PROD.find(x=>x.id===id);
+    aviso(prender?'Prendida: ya se ve «'+p.n+'»':'Apagada: ya no se ve «'+p.n+'»');
+  }catch(x){ aviso('No se guardó: '+x.message); }
+  pintarEmpresa();
+}
+
+window.addEventListener('hashchange',ruta);
+ruta();
+cargarApagados().then(ok=>{ if(ok) ruta(); });
+</script>
 </body>
 </html>
